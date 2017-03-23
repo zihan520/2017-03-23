@@ -1,0 +1,43 @@
+*{margin:0;padding:0;font-weight:bold;}
+header h1{text-align:center;margin-top:20px;}
+#control{position:fixed;left:20px;top:60px;}
+#control button{width:70px;padding:10px;font-size:15px;color:#fff;border-radius:8px;background-color:#9f8b77;}
+#control a{display:inline-block;width:70px;text-align:center;color:blue;text-decoration:none;}
+
+/*游戏区*/
+#gamebox{width:500px;margin:0 auto;position:relative;}
+#gamebox .menu button{width:100px;padding:10px;font-size:15px;color:#fff;border-radius:8px;background:#9f8b77;}
+/*游戏主体 */
+#gamebox .bg_box{width:500px;height:500px;margin-top:10px;border-radius:10px;background:#BBADA0;position:relative;}
+#gamebox .bg_box .cell{width:100px;height:100px;line-height:100px;text-align:center;font-size:40px;font-weight:bold;border-radius:10px;color:#776e65;background:#ccc0b3;position:absolute;}
+/*格子定位*/
+/*top定位*/
+#cell00,#cell01,#cell02,#cell03{top:20px;}
+#cell10,#cell11,#cell12,#cell13{top:140px;}
+#cell20,#cell21,#cell22,#cell23{top:260px;}
+#cell30,#cell31,#cell32,#cell33{top:380px;}
+/*Left定位*/
+#cell00,#cell10,#cell20,#cell30{left:20px;}
+#cell01,#cell11,#cell21,#cell31{left:140px;}
+#cell02,#cell12,#cell22,#cell32{left:260px;}
+#cell03,#cell13,#cell23,#cell33{left:380px;}
+/***********num定颜色****JS中使用************/
+#gamebox .bg_box .num2{background:#eee4da;}
+#gamebox .bg_box .num4{background:#ed30c8;}
+#gamebox .bg_box .num8{background:#f2b179;}
+#gamebox .bg_box .num16{background:#f59563;}
+#gamebox .bg_box .num32{background:#f67c5f;}
+#gamebox .bg_box .num64{background:#f65e3b;}
+#gamebox .bg_box .num128{background:#edcf72;}
+#gamebox .bg_box .num256{background:#edcc61;}
+#gamebox .bg_box .num512{background:#9c0;}
+#gamebox .bg_box .num1024{background:#33b5e5;}
+#gamebox .bg_box .num2048{background:#09c;}
+#gamebox .bg_box .num4096{background:#a6c;}
+#gamebox .bg_box .num8192{background: #93c;}
+
+/*结束*/
+#gameover{width:100%;height:100%;border-radius:10px;position:absolute;top:0;left:0;}
+#gameover .after_over{width:100%;height:100%;border-radius:10px;background-color:#555;opacity:0.5;}
+#gameover .after_game{width:220px;padding:10px 0 20px;border-radius:10px;background:#fff;text-align:center;position:absolute;bottom:200px;left:140px;}
+#gameover .after_game button{width:100px;padding:10px;font-size:15px;color:#fff;border-radius:8px;background-color:#9f8b77;}

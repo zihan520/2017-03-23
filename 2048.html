@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="2048.css">
+	<script type="text/javascript" src="2048.js"></script>
+	<title>2048</title>
+</head>
+<body>
+	<header><h1>2048</h1></header>
+	<!-- 控制区 -->
+	<div id="control">
+		<table>
+			<tr>
+				<td></td>
+				<td><button onclick="UpAction()">Up</button></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><button onclick="LeftAction()">Left</button></td>
+				<td><a href="http://jingyan.baidu.com/article/2c8c281df689d60008252a81.html" target="_blank">攻略</a></td>
+				<td><button onclick="RightAction()">Right</button></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button onclick="DownAction()">Down</button></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<!-- 游戏区 -->
+	<div id="gamebox">
+		<!-- 菜单栏 -->
+		<div class="menu">
+			<p><button onclick="StarAction()">New Game</button>
+			score：<span id="score">0</span></p>
+		</div>
+		<!-- 游戏主体 -->
+		<div class="bg_box">
+			<!-- 格子 4*4-->
+			<div class="cell" id="cell00"></div>
+			<div class="cell" id="cell01"></div>
+			<div class="cell" id="cell02"></div>
+			<div class="cell" id="cell03"></div>
+
+			<div class="cell" id="cell10"></div>
+			<div class="cell" id="cell11"></div>
+			<div class="cell" id="cell12"></div>
+			<div class="cell" id="cell13"></div>
+
+			<div class="cell" id="cell20"></div>
+			<div class="cell" id="cell21"></div>
+			<div class="cell" id="cell22"></div>
+			<div class="cell" id="cell23"></div>
+
+			<div class="cell" id="cell30"></div>
+			<div class="cell" id="cell31"></div>
+			<div class="cell" id="cell32"></div>
+			<div class="cell" id="cell33"></div>
+		</div>
+		<!-- 结束面板 -->
+		<div id="gameover">
+			<!-- 背景 -->
+			<div class="after_over"></div>
+			<!-- 前景 -->
+			<div class="after_game">
+				<h3>GAME OVER</h3>
+				<p>score：<span id="fscore">0</span></p>
+				<button onclick="StarAction()">Try Again!</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
